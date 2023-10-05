@@ -2,7 +2,7 @@
 set -e
 
 # Pull the Docker image from Docker Hub
-echo
+docker pull mahesh0404/python-flask-cicd
 
 # Run the Docker image as a container
-echo
+docker run -d -p 5000:5000 mahesh0404/python-flask-cicd
