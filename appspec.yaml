@@ -6,7 +6,9 @@ hooks:
     - location: scripts/stopcontainer.sh
       timeout: 300
       runas: root
+      command: chmod +x scripts/stopcontainer.sh
   AfterInstall:
     - location: scripts/startcontainer.sh
       timeout: 300
       runas: root
+      command: chmod +x scripts/startcontainer.sh
